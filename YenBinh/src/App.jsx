@@ -47,13 +47,7 @@ const App = () => {
     <div style={{marginLeft:'650px', marginBottom:'200px'}}>
       <JobProvider>
         <Title>#Todo</Title>
-        <Tabs size='large' style={{width:'500px'}} defaultActiveKey="1" onChange={onChange}>
-          {tabs.map((tab) => (
-            <TabPane  tab={tab.label} key={tab.key}>
-              {tab.content}
-            </TabPane>
-          ))}
-        </Tabs>
+        <Tabs size='large' style={{width:'500px'}} defaultActiveKey="1" onChange={onChange} items={tabs}/>
       </JobProvider>
       </div>
     </>
