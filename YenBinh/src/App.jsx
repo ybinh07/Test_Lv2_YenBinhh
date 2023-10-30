@@ -6,8 +6,6 @@ import All from '../components/All';
 import Active from '../components/Active';
 import Complete from '../components/Complete';
 
-const { TabPane } = Tabs;
-
 const Title = styled.p`
   color: black;
   font-size: 40px;
